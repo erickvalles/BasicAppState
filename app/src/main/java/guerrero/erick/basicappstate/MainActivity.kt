@@ -62,8 +62,8 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
 fun Content(modifier: Modifier = Modifier, context: Context){
 
     var respuesta by remember { mutableStateOf("") }
-    var numero1 by remember { mutableStateOf(1) }
-    var numero2 by remember { mutableStateOf(3) }
+    var numero1 by remember { mutableStateOf(getRandomNumber()) }
+    var numero2 by remember { mutableStateOf(getRandomNumber()) }
     var showDialog by remember {mutableStateOf(false)}
 
     var mult = numero2 * numero1
