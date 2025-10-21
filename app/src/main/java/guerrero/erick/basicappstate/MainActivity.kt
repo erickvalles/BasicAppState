@@ -64,7 +64,7 @@ fun Content(modifier: Modifier = Modifier, context: Context){
     var respuesta by remember { mutableStateOf("") }
     var numero1 by remember { mutableStateOf(getRandomNumber()) }
     var numero2 by remember { mutableStateOf(getRandomNumber()) }
-    var showDialog by remember {mutableStateOf(false)}
+    var showDialog by remember {mutableStateOf(true)}
 
     var mult = numero2 * numero1
 
